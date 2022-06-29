@@ -1,0 +1,33 @@
+button {
+  height: 150px;
+  width: 450px;
+  font-size: 30px;
+  margin: 5px 10px;
+  font-family: Verdana;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #66b0ff;
+  cursor: pointer;
+  border-color: #3396ff;
+}
+
+button:hover {
+  background-color: #99caff;
+}
+
+.button-adding {
+  height: 200px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

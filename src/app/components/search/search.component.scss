@@ -1,0 +1,27 @@
+h1 {
+  margin: auto;
+  font-family: Verdana;
+}
+
+a {
+  margin: auto;
+  font-family: Verdana;
+  font-size: 17px;
+}
+
+.button {
+  display: block;
+  height: 25px;
+  background: #4E9CAF;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  line-height: 25px;
+  background-color: rgb(0, 153, 255, 0.2);
+  text-decoration: none;
+  margin: 20px 0;
+}
+
+.button:hover {
+  opacity: 0.5;
+}

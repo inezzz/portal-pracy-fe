@@ -1,0 +1,24 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label>Nazwa stanowiska</label><br>
+    <input type="text" name="nazwaStanowiska" id="nazwaStanowiska" formControlName="jobTitle" placeholder="Nazwa stanowiska">
+  </div>
+  <br>
+  <div class="form-control">
+    <label>Wynagrodzenie</label><br>
+    <input type="number" name="wynagrodzenie" id="wynagrodzenie" formControlName="salary" placeholder="Wynagrodzenie">
+  </div>
+  <br>
+  <div class="form-control">
+    <label>Opis stanowiska</label><br>
+    <textarea name="opisStanowiska" formControlName="description" cols="60" rows="8"></textarea>
+  </div>
+  <br>
+  <div class="form-control">
+    <button type="submit">Dodaj</button>
+    <button onclick="window.location.href='/'">Anuluj</button>
+  </div>
+</form>

@@ -1,0 +1,29 @@
+.jobOffer {
+  font-size: 18px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-family: Verdana;
+}
+
+.title {
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  margin: 5px 10px;
+  font-family: Verdana;
+  padding: 20px;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: #66b0ff;
+  cursor: pointer;
+  border-color: #3396ff;
+}
+
+button:hover {
+  background-color: #99caff;
+}

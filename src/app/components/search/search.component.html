@@ -1,0 +1,19 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+
+<h1>Ogłoszenia o pracę</h1>
+<br>
+
+<ng-container *ngIf="jobOffers$ |async as jobOffers">
+
+  <ng-container *ngFor="let jobOffer of jobOffers">
+    <a [routerLink]="[jobOffer.id]" class="button">
+      <span>
+        <div>
+          {{jobOffer.jobTitle}} ({{jobOffer.salary}})
+        </div>
+      </span>
+    </a>
+  </ng-container>
+
+</ng-container>

@@ -1,0 +1,30 @@
+<app-header></app-header>
+<app-navigation></app-navigation>
+
+<ng-container *ngIf="jobOffer$ |async as jobOffer">
+
+  <div class="jobOffer">
+    <div>
+      <span class="title">Stanowisko</span><br>
+      <span>{{jobOffer.jobTitle }}</span><br><br>
+    </div>
+    <div>
+      <span class="title">Wynagrodzenie</span><br>
+      <span>{{jobOffer.salary }}</span><br><br>
+    </div>
+    <div>
+      <span class="title">Opis stanowiska</span><br>
+      <span>{{jobOffer.description }}</span><br><br>
+    </div>
+    <div>
+      <button (click)="editWindow()">Edytuj</button>
+      <button (click)="deleteJob()">Usuń</button>
+    </div>
+  </div>
+
+
+</ng-container>
+
+
+
+
